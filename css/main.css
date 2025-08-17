@@ -12,4 +12,53 @@
 nav img{
     height: 50px;
 }
+/* .wrap-menu-desktop.scrolled {
+  opacity: 1;
+}
+.scrolled {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+} */
 /* home section */
+/* menu section */
+.popular_menu_card{
+    
+    height: 430px;
+}
+.popular_menu_card img{
+transition: all 0.3s ease;
+}
+.popular_menu_card img:hover{
+    transform: scale(1.05);
+}
+.popular_menu_card p{
+    margin-bottom: 8px;
+}
+.popular_menu_card_desc{
+    height: 200px;
+}
+.carousel-indicators [data-bs-target]{
+    color: #fff;
+    width: 60px;
+    height:60px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+      text-indent: 0; 
+}
+.carousel-indicators{
+bottom: 94%;
+}
+
+/* responsive */
+@media only screen and (min-width: 992px) {
+    .carousel-indicators{
+bottom: 80%;
+}
+.popular_menu_card{
+    height: 320px;
+}
+.popular_menu_card_desc{
+    height: 160px;
+}
+}
