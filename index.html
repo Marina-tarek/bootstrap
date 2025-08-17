@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/seafood logo.png">
   <title>OceanBite</title>
+  <!-- font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -13,10 +18,10 @@
 <body>
 
   <!-- start navbar -->
-   <!-- position-fixed w-100 -->
+  <!-- position-fixed w-100 -->
   <nav class="navbar navbar-expand-lg  ">
     <div class="container">
-      <a class="navbar-brand ms-2" href="#"><img src="images/seafood logo.png" alt="seaFood logo images"></a>
+      <a class="navbar-brand ms-2" href="#Home"><img src="images/seafood logo.png" alt="seaFood logo images"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,6 +31,7 @@
           <a class="nav-link active px-3" aria-current="page" href="#Home">Home</a>
           <a class="nav-link px-3" href="#Menu">Menu</a>
           <a class="nav-link px-3" href="#About">About</a>
+          <a class="nav-link px-3" href="#Reserved">Reserved</a>
           <a class="nav-link px-3" href="#Contact">Contact</a>
         </div>
       </div>
@@ -33,7 +39,7 @@
   </nav>
   <!-- end navbar -->
   <!-- start hero section -->
-  <section class="hero py-5">
+  <section id="Home" class="hero py-5">
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class="col-11 text-center col-md-6 text-md-start">
@@ -57,154 +63,176 @@
       <div class="container">
         <div class="row text-center">
           <h2 class="text-main my-3">Why OceanBite?</h2>
-          <p class="w-75 mx-auto mb-4">We are passionate about serving fresh, sustainable, and mouth-watering seafood that captures the true taste
+          <p class="w-75 mx-auto mb-4">We are passionate about serving fresh, sustainable, and mouth-watering seafood
+            that captures the true taste
             of the ocean.
             From shrimps to lobsters, we ensure every bite is a delicious experience that keeps you coming
             back.
           </p>
-          
-            <div><a href="#Menu" class="btn btn-main py-2 fs-6">See Our Dishes</a></div>
+
+          <div><a href="#Menu" class="btn btn-main py-2 fs-6">See Our Dishes</a></div>
         </div>
 
       </div>
     </section>
     <!-- End About section -->
-     <!-- start Menu section -->
-      <section id="Menu" class="popular_menu py-5 bg-light">
-<div class="container">
-<div class="row text-center">
-<h2 class="text-main my-3 pb-4">Our Special Menu</h2>
-</div>
-<div class="row">
-<div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators ">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btn-danger" aria-current="true" aria-label="Slide 1">Grilled</button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=" btn-danger" aria-label="Slide 2">Pasta</button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class=" btn-danger" aria-label="Slide 3">Soup</button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="popular_menu_cards row justify-content-evenly py-4 my-5 py-5 row-gap-4">
-        <div class="popular_menu_card col-8 col-lg-3 border border-1 border-black position-relative rounded-3 p-0 overflow-hidden">
-<img src="images/grilled seafood1.jpg" alt="grilled seafood image" class="w-100">
-<div class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white p-3 py-lg-1 px-lg-2 ">
-<h3 class="text-center">Roasted Fish</h3>
-<p > Tender roasted fish, grilled to rich smoky flavor</p>
-<div class="row justify-content-around mt-3">
-  <span class="col-5"> $60</span>
-  <button class="col-5 btn btn-main"> To Order</button>
-
-</div>
-</div>
+    <!-- start Menu section -->
+    <section id="Menu" class="popular_menu py-5 bg-light">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="text-main my-3 pb-4">Our Special Menu</h2>
         </div>
-               <div class="popular_menu_card col-8 col-lg-3 border border-1 border-black position-relative rounded-3 p-0 overflow-hidden">
-<img src="images/grilled seafood2.jpg" alt="Grilled Salmon image" class="w-100">
-<div class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white p-3 py-lg-1 px-lg-2 ">
-<h3 class="text-center">Grilled Salmon</h3>
-<p >Fresh grilled salmon, juicy with a smoky taste.</p>
-<div class="row justify-content-around mt-3">
-  <span class="col-5"> $150</span>
-  <button class="col-5 btn btn-main"> To Order</button>
+        <div class="row">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators ">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active btn-danger" aria-current="true" aria-label="Slide 1">Grilled</button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=" btn-danger"
+                aria-label="Slide 2">Pasta</button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class=" btn-danger"
+                aria-label="Slide 3">Soup</button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="popular_menu_cards row justify-content-evenly py-4 my-5 py-5 row-gap-4">
+                  <div
+                    class="popular_menu_card col-8 col-lg-3 border border-1  position-relative rounded-3 p-0 overflow-hidden">
+                    <img src="images/grilled seafood1.jpg" alt="grilled seafood image" class="w-100">
+                    <div
+                      class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white p-3 py-lg-1 px-lg-2 ">
+                      <h3 class="text-center">Roasted Fish</h3>
+                      <p> Tender roasted fish, grilled to rich smoky flavor</p>
+                      <div class="row justify-content-around mt-3">
+                        <span class="col-5"> $60</span>
+                        <button class="col-5 btn btn-main"> To Order</button>
 
-</div>
-</div>
-        </div>
-               <div class="popular_menu_card col-8 col-lg-3 border border-1 border-black position-relative rounded-3 p-0 overflow-hidden">
-<img src="images/grilled seafood3.jpg" alt="Grilled Lobster image" class="w-100">
-<div class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white  p-3 py-lg-1 px-lg-2 ">
-<h3 class="text-center">Grilled Lobster</h3>
-<p > Grilled lobster, butter-brushed with rich smoky flavor.</p>
-<div class="row justify-content-around mt-3">
-  <span class="col-5"> $50</span>
-  <button class="col-5 btn btn-main"> To Order</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="popular_menu_card col-8 col-lg-3 border border-1  position-relative rounded-3 p-0 overflow-hidden">
+                    <img src="images/grilled seafood2.jpg" alt="Grilled Salmon image" class="w-100">
+                    <div
+                      class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white p-3 py-lg-1 px-lg-2 ">
+                      <h3 class="text-center">Grilled Salmon</h3>
+                      <p>Fresh grilled salmon, juicy with a smoky taste.</p>
+                      <div class="row justify-content-around mt-3">
+                        <span class="col-5"> $150</span>
+                        <button class="col-5 btn btn-main"> To Order</button>
 
-</div>
-</div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-           <div class="popular_menu_cards row justify-content-evenly py-4 my-5 py-5 row-gap-4">
-        <div class="popular_menu_card col-8 col-lg-3 border border-1 border-black position-relative rounded-3 p-0 overflow-hidden">
-<img src="images/pasta1.jpg" alt="grilled seafood image" class="w-100">
-<div class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white p-3 py-lg-1 px-lg-2 ">
-<h3 class="text-center">Shrimp Scampi</h3>
-<p>Tender shrimp sautéed in garlic butter, served over fresh pasta.</p>
-<div class="row justify-content-around mt-3">
-  <span class="col-5"> $150</span>
-  <button class="col-5 btn btn-main"> To Order</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="popular_menu_card col-8 col-lg-3 border border-1  position-relative rounded-3 p-0 overflow-hidden">
+                    <img src="images/grilled seafood3.jpg" alt="Grilled Lobster image" class="w-100">
+                    <div
+                      class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white  p-3 py-lg-1 px-lg-2 ">
+                      <h3 class="text-center">Grilled Lobster</h3>
+                      <p> Grilled lobster, butter-brushed with rich smoky flavor.</p>
+                      <div class="row justify-content-around mt-3">
+                        <span class="col-5"> $50</span>
+                        <button class="col-5 btn btn-main"> To Order</button>
 
-</div>
-</div>
-        </div>
-               <div class="popular_menu_card col-8 col-lg-3 border border-1 border-black position-relative rounded-3 p-0 overflow-hidden">
-<img src="images/pasta2.jpg" alt="Frutti di Mare image" class="w-100">
-<div class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white p-3 py-lg-1 px-lg-2 ">
-<h3 class="text-center">Frutti di Mare</h3>
-<p>Delicious pasta tossed with fresh seafood in savory sauce.</p>
-<div class="row justify-content-around mt-3">
-  <span class="col-5"> $70</span>
-  <button class="col-5 btn btn-main"> To Order</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="popular_menu_cards row justify-content-evenly py-4 my-5 py-5 row-gap-4">
+                  <div
+                    class="popular_menu_card col-8 col-lg-3 border border-1  position-relative rounded-3 p-0 overflow-hidden">
+                    <img src="images/pasta1.jpg" alt="grilled seafood image" class="w-100">
+                    <div
+                      class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white p-3 py-lg-1 px-lg-2 ">
+                      <h3 class="text-center">Shrimp Scampi</h3>
+                      <p>Tender shrimp sautéed in garlic butter, served over fresh pasta.</p>
+                      <div class="row justify-content-around mt-3">
+                        <span class="col-5"> $150</span>
+                        <button class="col-5 btn btn-main"> To Order</button>
 
-</div>
-</div>
-        </div>
-               <div class="popular_menu_card col-8 col-lg-3 border border-1 border-black position-relative rounded-3 p-0 overflow-hidden">
-<img src="images/pasta3.jpg" alt="Fusion Dish image" class="w-100">
-<div class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white  p-3 py-lg-1 px-lg-2 ">
-<h3 class="text-center">Fusion Dish</h3>
-<p > Makhani Sauce Pasta is a popular Indo-Italian fusion dish </p>
-<div class="row justify-content-around mt-3">
-  <span class="col-5"> $50</span>
-  <button class="col-5 btn btn-main"> To Order</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="popular_menu_card col-8 col-lg-3 border border-1  position-relative rounded-3 p-0 overflow-hidden">
+                    <img src="images/pasta2.jpg" alt="Frutti di Mare image" class="w-100">
+                    <div
+                      class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white p-3 py-lg-1 px-lg-2 ">
+                      <h3 class="text-center">Frutti di Mare</h3>
+                      <p>Delicious pasta tossed with fresh seafood in savory sauce.</p>
+                      <div class="row justify-content-around mt-3">
+                        <span class="col-5"> $70</span>
+                        <button class="col-5 btn btn-main"> To Order</button>
 
-</div>
-</div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-           <div class="popular_menu_cards row justify-content-evenly py-4 my-5 py-5 row-gap-4">
-        <div class="popular_menu_card col-8 col-lg-3 border border-1 border-black position-relative rounded-3 p-0 overflow-hidden">
-<img src="images/soup1.jpg" alt="soup image" class="w-100">
-<div class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white p-3 py-lg-1 px-lg-2 ">
-<h3 class="text-center">Korean soup</h3>
-<p>popular Korean noodle soup characterized by savory broth</p>
-<div class="row justify-content-around mt-3">
-  <span class="col-5"> $150</span>
-  <button class="col-5 btn btn-main"> To Order</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="popular_menu_card col-8 col-lg-3 border border-1  position-relative rounded-3 p-0 overflow-hidden">
+                    <img src="images/pasta3.jpg" alt="Fusion Dish image" class="w-100">
+                    <div
+                      class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white  p-3 py-lg-1 px-lg-2 ">
+                      <h3 class="text-center">Fusion Dish</h3>
+                      <p> Makhani Sauce Pasta is a popular Indo-Italian fusion dish </p>
+                      <div class="row justify-content-around mt-3">
+                        <span class="col-5"> $50</span>
+                        <button class="col-5 btn btn-main"> To Order</button>
 
-</div>
-</div>
-        </div>
-               <div class="popular_menu_card col-8 col-lg-3 border border-1 border-black position-relative rounded-3 p-0 overflow-hidden">
-<img src="images/soup2.jpg" alt="Soup image" class="w-100">
-<div class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white p-3 py-lg-1 px-lg-2 ">
-<h3 class="text-center">Yogurt Shrimp</h3>
-<p>a similar preparation involving shrimp in a creamy sauce</p>
-<div class="row justify-content-around mt-3">
-  <span class="col-5"> $70</span>
-  <button class="col-5 btn btn-main"> To Order</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="popular_menu_cards row justify-content-evenly py-4 my-5 py-5 row-gap-4">
+                  <div
+                    class="popular_menu_card col-8 col-lg-3 border border-1  position-relative rounded-3 p-0 overflow-hidden">
+                    <img src="images/soup1.jpg" alt="soup image" class="w-100">
+                    <div
+                      class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white p-3 py-lg-1 px-lg-2 ">
+                      <h3 class="text-center">Korean soup</h3>
+                      <p>popular Korean noodle soup characterized by savory broth</p>
+                      <div class="row justify-content-around mt-3">
+                        <span class="col-5"> $150</span>
+                        <button class="col-5 btn btn-main"> To Order</button>
 
-</div>
-</div>
-        </div>
-               <div class="popular_menu_card col-8 col-lg-3 border border-1 border-black position-relative rounded-3 p-0 overflow-hidden">
-<img src="images/soup3.jpg" alt="Soup image" class="w-100">
-<div class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white  p-3 py-lg-1 px-lg-2 ">
-<h3 class="text-center">pork-broth</h3>
-<p >spicy broth,typically flavored with gochugaru(chili powder)</p>
-<div class="row justify-content-around mt-3">
-  <span class="col-5"> $50</span>
-  <button class="col-5 btn btn-main"> To Order</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="popular_menu_card col-8 col-lg-3 border border-1  position-relative rounded-3 p-0 overflow-hidden">
+                    <img src="images/soup2.jpg" alt="Soup image" class="w-100">
+                    <div
+                      class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white p-3 py-lg-1 px-lg-2 ">
+                      <h3 class="text-center">Yogurt Shrimp</h3>
+                      <p>a similar preparation involving shrimp in a creamy sauce</p>
+                      <div class="row justify-content-around mt-3">
+                        <span class="col-5"> $70</span>
+                        <button class="col-5 btn btn-main"> To Order</button>
 
-</div>
-</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="popular_menu_card col-8 col-lg-3 border border-1  position-relative rounded-3 p-0 overflow-hidden">
+                    <img src="images/soup3.jpg" alt="Soup image" class="w-100">
+                    <div
+                      class="popular_menu_card_desc position-absolute bottom-0 end-0 start-0 rounded-3 bg-white  p-3 py-lg-1 px-lg-2 ">
+                      <h3 class="text-center">pork-broth</h3>
+                      <p>spicy broth,typically flavored with gochugaru(chili powder)</p>
+                      <div class="row justify-content-around mt-3">
+                        <span class="col-5"> $50</span>
+                        <button class="col-5 btn btn-main"> To Order</button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
@@ -212,11 +240,94 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Menu section  -->
+    <!-- start review section -->
+    <section class="review_section py-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-main text-center my-3">See what Our Cutomer Say</h2>
+        </div>
+        <div class="row review_cards justify-content-evenly py-5">
+          <div class="review_card col-2 border border-1  rounded-3 p-1 left_rotate_card">
+            <div class="inner_review_card">
+              <div class="review_image"><img src="images/review1.jpg" alt="person image" class="w-100 rounded-3 p-1">
+              </div>
+              <div>
+                <h3 class="text-center">ANNA</h3>
+                <div class="text-center"><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i></div>
+                <p>Fresh, flavorful, and perfectly cooked - the best seafood I've had in years!</p>
+              </div>
+            </div>
+          </div>
+          <div class="review_card col-2 border border-1  rounded-3 p-1 right_rotate_card ">
+            <div class="inner_review_card">
+              <div class="review_image"><img src="images/review2.jpg" alt="person image" class="w-100 rounded-3 p-1">
+              </div>
+              <div>
+                <h3 class="text-center">ALI</h3>
+                <div class="text-center"><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i></div>
+                <p>Fresh catch of the day was outstanding - you can taste the quality.</p>
+              </div>
+            </div>
+          </div>
+          <div class="review_card col-2 border border-1  rounded-3 p-1 left_rotate_card ">
+            <div class="inner_review_card">
+              <div class="review_image"><img src="images/review3.jpg" alt="person image" class="w-100 rounded-3 p-1">
+              </div>
+              <div>
+                <h3 class="text-center">LOURA</h3>
+                <div class="text-center"><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star text-warning"></i></div>
+                <p>Great atmosphere, friendly service, and seafood cooked to perfection.</p>
+              </div>
+            </div>
+          </div>
+          <div class="review_card col-2 border border-1  rounded-3 p-1 right_rotate_card ">
+            <div class="inner_review_card">
+              <div class="review_image"><img src="images/review4.jpg" alt="person image" class="w-100 rounded-3 p-1">
+              </div>
+              <div>
+                <h3 class="text-center">OMAR</h3>
+                <div class="text-center"><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star-half text-warning"></i></div>
+                <p>Every bite tastes like the ocean's freshness. Highly recommended!</p>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <div class=" text-center">
+<button class="btn btn-main py-2">View More</button>
+        </div>
+      </div>
+    </section>
+    <!-- end review section -->
+     <!-- start reserved section -->
+      <section id="Reserved" class="reserved_section py-5">
+        <div class="container">
+<div class="row">
+<h2 class="text-center">Reserved Now</h2>
+</div>
+<div class="border border-1 p-2">
+<div class="row justify-content-evenly">
+  <div class="col-5">
+    
+  </div>
 </div>
 </div>
-</div>
+        </div>
       </section>
-      <!--End Menu section  -->
+      <!-- end reserved section  -->
   </main>
   <!-- strat footer -->
   <footer></footer>

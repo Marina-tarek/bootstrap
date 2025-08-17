@@ -1,17 +1,36 @@
-:root{
-    --main-color:#33A1E0;
+:root {
+    /* #33A1E0 */
+    --main-color: #1C6EA4;
+    --second-color:#33A1E0;
+    --base-color:#fff;
+    --bg-color:#FFF9AF;
 }
 
 /* general */
-.text-main{color: var(--main-color);}
-.btn-main{
+h1,h2,h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text-main {
+    color: var(--main-color);
+}
+
+.btn-main {
     background-color: var(--main-color);
-    color: white;
+    color: var(--base-color);
+    transition: all 0.3s ease;
+}
+.btn-main:hover{
+    background-color:var(--second-color) ;
+    color: var(--base-color);
+}
+.border{
+    border-color: var(--main-color);
 }
 /* navbar section */
-nav img{
+nav img {
     height: 50px;
 }
+
 /* .wrap-menu-desktop.scrolled {
   opacity: 1;
 }
@@ -22,43 +41,77 @@ nav img{
 } */
 /* home section */
 /* menu section */
-.popular_menu_card{
-    
+.popular_menu_card {
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     height: 430px;
 }
-.popular_menu_card img{
-transition: all 0.3s ease;
+
+.popular_menu_card img {
+    transition: all 0.3s ease;
 }
-.popular_menu_card img:hover{
+
+.popular_menu_card img:hover {
     transform: scale(1.05);
 }
-.popular_menu_card p{
+
+.popular_menu_card p {
     margin-bottom: 8px;
 }
-.popular_menu_card_desc{
+
+.popular_menu_card_desc {
     height: 200px;
 }
-.carousel-indicators [data-bs-target]{
-    color: #fff;
+
+.carousel-indicators [data-bs-target] {
+    color: var(--base-color);
     width: 60px;
-    height:60px;
+    height: 60px;
     background-color: var(--main-color);
     border-radius: 50%;
-      text-indent: 0; 
+    text-indent: 0;
 }
-.carousel-indicators{
-bottom: 94%;
+
+.carousel-indicators {
+    bottom: 94%;
+}
+
+/* review section */
+/* .review_image{
+    height:fit-content ;
+} */
+.review_image img {
+    height: 150px;
+}
+
+.left_rotate_card {
+    transform: rotate(-5deg);
+}
+
+.right_rotate_card {
+    transform: rotate(5deg);
+}
+
+.review_card {
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review_card:hover {
+    transform: scale(1.05);
+    z-index: 10;
 }
 
 /* responsive */
 @media only screen and (min-width: 992px) {
-    .carousel-indicators{
-bottom: 80%;
-}
-.popular_menu_card{
-    height: 320px;
-}
-.popular_menu_card_desc{
-    height: 160px;
-}
+    .carousel-indicators {
+        bottom: 80%;
+    }
+
+    .popular_menu_card {
+        height: 320px;
+    }
+
+    .popular_menu_card_desc {
+        height: 160px;
+    }
 }
