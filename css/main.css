@@ -1,0 +1,15 @@
+:root{
+    --main-color:#33A1E0;
+}
+
+/* general */
+.text-main{color: var(--main-color);}
+.btn-main{
+    background-color: var(--main-color);
+    color: white;
+}
+/* navbar section */
+nav img{
+    height: 50px;
+}
+/* home section */
