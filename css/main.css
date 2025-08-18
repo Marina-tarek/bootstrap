@@ -4,6 +4,7 @@
     --second-color:#33A1E0;
     --base-color:#fff;
     --bg-color:#FFF9AF;
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* general */
@@ -13,7 +14,9 @@ h1,h2,h3{
 .text-main {
     color: var(--main-color);
 }
-
+.bg_main{
+    background-color: var(--bg-color);
+}
 .btn-main {
     background-color: var(--main-color);
     color: var(--base-color);
@@ -30,6 +33,14 @@ h1,h2,h3{
 nav img {
     height: 50px;
 }
+nav a {
+    color: unset;
+}
+.navbar-nav .nav-link.active{
+        background-color: var(--main-color);
+    color: var(--base-color);
+    border-radius: 6px;
+}
 
 /* .wrap-menu-desktop.scrolled {
   opacity: 1;
@@ -42,7 +53,7 @@ nav img {
 /* home section */
 /* menu section */
 .popular_menu_card {
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+box-shadow:var(--box-shadow);
     height: 430px;
 }
 
@@ -93,12 +104,24 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
 .review_card {
     transition: 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
 }
 
 .review_card:hover {
     transform: scale(1.05);
     z-index: 10;
+}
+/* reserved section */
+/* .reserved_form{
+     box-shadow: var(--box-shadow);
+} */
+.form-control{
+    border-color: var(--second-color);
+}
+.reserved_form i{
+    right: 0;
+    top: 0;
+    transform: translate(-25%, 60%);
 }
 
 /* responsive */
