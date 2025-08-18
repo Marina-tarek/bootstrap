@@ -50,7 +50,46 @@ nav a {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 } */
-
+/* home section */
+.home-img img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
 /* menu section */
 .popular_menu_card {
 box-shadow:var(--box-shadow);
@@ -131,14 +170,14 @@ footer ul li:hover{
 }
 /* to top  */
 .to_top {
-  background-color: var(--bg-color);
-  color: #fff;
+  background-color: var(--main-color);
+  color: var(--base-color);
   width: 40px;
   height: 40px;
   justify-content: center;
   align-items: center;
   position: fixed;
-  right: 35px;
+  right: 15px;
   bottom: 0;
   cursor: pointer;
   display: none;
